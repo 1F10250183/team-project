@@ -1,2 +1,2 @@
 # team project
-## sss
+チーム演習
