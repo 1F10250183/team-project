@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>サブタイトル１</title>
+    <link rel="stylesheet" type="text/css" href="css/">
+  </head>
+
+  <body>
+    <h1>セクシャルマイノリティについてのページ</h1>
+    <h2>そもそもLGBTとは？</h2>
+    <P>セクシャルマイノリティ（性的少数者）のことを意味し、象徴として６つの色を使用した、虹色の旗（レインボーフラッグ）を掲げています。</P>
+    
+    <span class=""></span>
+  </body>
