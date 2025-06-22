@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>占い</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <h1>血液型x星座占い</h1>
+    
+    <label>星座:
+        <select id="zodiac">
+            <option value="">選択</option>
+            <option>おひつじ座</option>
+            <option>おうし座</option>
+            <option>ふたご座</option>
+            <option>かに座</option>
+            <option>しし座</option>
+            <option>おとめ座</option>
+            <option>てんびん座</option>
+            <option>さそり座</option>
+            <option>いて座</option>
+            <option>やぎ座</option>
+            <option>みずがめ座</option>
+            <option>うお座</option>
+        </select>
+    </label>
+    <br>
+    
+    <label>血液型:
+        <select id="blood">
+            <option value="">選択</option>
+            <option>A</option>
+            <option>B</option>
+            <option>O</option>
+            <option>AB</option>
+        </select>
+    </label>
+    <br>
+
+    <button onclick="getFortune()">占う</button>
+
+    <div id="result"></div>
+
+    <script src="uranai.js"></script>
+</body>
+</html>
