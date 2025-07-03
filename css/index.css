@@ -84,3 +84,16 @@ div.important {
   font-family: sans-serif;
   font-size: 24px;
 }
+
+#top {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+  background-color: #444444;
+  color: #ffffff;
+  text-decoration: none;
+}
