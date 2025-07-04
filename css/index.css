@@ -7,19 +7,19 @@ h1 {
   padding: 10px 0 10px 0;
   border-bottom: solid 2px #666666;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   color: #000;
 }
 
 h2 {
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 p {
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .sidebar li {
@@ -33,8 +33,13 @@ p {
 }
 
 .sidebar {
-  width: 30%;
+  width: 15%;
   margin: 10px 0 10px 0;
+  background: #eeeeee;
+}
+.sidebar p{
+  font-size: 30px;
+  background-color: #cccccc;
 }
 
 .sidebar ul {
@@ -47,11 +52,13 @@ p {
   margin: 0px 0px 5px 0px;
   padding: 5px 5px 5px 5px;
   background-color: #eeeeee;
+  font-size: 20px;
 }
 
 .content {
   width: 70%;
   margin: 10px 0 10px 0;
+  font-size: 30px;
 }
 
 .content > h2 {
@@ -72,6 +79,7 @@ div.important {
 .a{
     padding: 1px 10px 1px 10px;
     margin: 0px 10px 20px 10px;
+    font-size: 30PX;
 }
 
 .mokei{ 
@@ -82,7 +90,7 @@ div.important {
 
 .a li {
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 #top {
@@ -96,4 +104,7 @@ div.important {
   background-color: #444444;
   color: #ffffff;
   text-decoration: none;
+}
+.die{
+  width: 200px;
 }
