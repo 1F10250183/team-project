@@ -265,19 +265,22 @@ img{
 /*占いのページに飛ぶイラスト*/
 .fortune-link {
   text-decoration: none;
+  display: inline-block;
 }
 
 .fortune-image {
   position: relative;
-  display: inline-block;
-  width: 200px;  /* サイズ調整は自由 */
+  width: 200px;       /* 必要に応じてサイズ調整 */
+  height: 200px;
+  margin: auto;
 }
 
 .fortune-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  border-radius: 50%;  /* 丸く見せたい場合 */
+  border-radius: 50%;  
 }
 
 .fortune-text {
@@ -287,9 +290,10 @@ img{
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
-  font-size: 30px;
-  text-shadow: 1px 1px 3px black;
+  font-size: 28px;
+  text-shadow: 1px 1px 4px black;
   pointer-events: none; /* クリックは画像全体に有効 */
+  text-align: center;
 }
 .fortune-image:hover {
     filter: brightness(1.1);
