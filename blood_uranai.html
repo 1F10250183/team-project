@@ -6,41 +6,51 @@
     <link rel="stylesheet" type="text/css" href="css/blood.css">
 </head>
 <body>
+    <div class="breadcrumb">
+  <a href="index.html">ホーム</a> &gt; 
+  <a href="blood.html">血液型について</a> &gt; 
+  占い
+</div>
+
     <h1>血液型x星座占い</h1>
     
-    <label>星座:
-        <select id="zodiac">
-            <option value="">選択</option>
-            <option>おひつじ座</option>
-            <option>おうし座</option>
-            <option>ふたご座</option>
-            <option>かに座</option>
-            <option>しし座</option>
-            <option>おとめ座</option>
-            <option>てんびん座</option>
-            <option>さそり座</option>
-            <option>いて座</option>
-            <option>やぎ座</option>
-            <option>みずがめ座</option>
-            <option>うお座</option>
-        </select>
-    </label>
-    <br>
+    <h2>星座を選んでください：</h2>
+    <div class="img-select" id="zodiac-group">
+        <img src="星座イラスト/seiza01_ohitsuji.png" data-value="おひつじ座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza02_oushi.png" data-value="おうし座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza03_futago.png" data-value="ふたご座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza04_kani.png" data-value="かに座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza05_shishi.png" data-value="しし座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza06_otome.png" data-value="おとめ座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza07_tenbin.png" data-value="てんびん座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza08_sasori.png" data-value="さそり座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza09_ite.png" data-value="いて座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza10_yagi.png" data-value="やぎ座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza11_mizugame.png" data-value="みずがめ座" onclick="selectZodiac(this)">
+        <img src="星座イラスト/seiza12_uo.png" data-value="うお座" onclick="selectZodiac(this)">
+    </div>
     
-    <label>血液型:
-        <select id="blood">
-            <option value="">選択</option>
-            <option>A</option>
-            <option>B</option>
-            <option>O</option>
-            <option>AB</option>
-        </select>
-    </label>
-    <br>
+    <h2>血液型を選んでください：</h2>
+    <div class="img-select" id="blood-group">
+        <img src="血液型イラスト/ketsuekigata_a.png" data-value="A" onclick="selectBlood(this)">
+        <img src="血液型イラスト/ketsuekigata_b.png" data-value="B" onclick="selectBlood(this)">
+        <img src="血液型イラスト/ketsuekigata_ab.png" data-value="ab" onclick="selectBlood(this)">
+        <img src="血液型イラスト/ketsuekigata_o.png" data-value="o" onclick="selectBlood(this)">
+    </div> 
 
+    <div class="center-button">
     <button class="btn-sticky" onclick="getFortune()">占う</button>
+    </div>
 
     <div id="result"></div>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">×</span>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
 
     <script src="uranai.js"></script>
 </body>

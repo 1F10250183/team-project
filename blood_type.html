@@ -6,23 +6,53 @@
     <link rel="stylesheet" type="text/css" href="css/blood.css">
 </head>
 <body>
+    <a href="index.html" class="home-button">🏠 ホームに戻る</a>
+    
     <h1>血液型について</h1>
     <img src="body_kekkan_sarasara.png" class="kekkan">
     <h2>説明</h2>
-    <p id="blood_explain">赤血球上などの糖鎖の末端にある糖の違いにより<br>
-        <strong>A、B、AB、O</strong><br> の4つのタイプに分類される。
+    <p id="blood_explain">赤血球上などの糖鎖の末端にある糖の違いにより
+        <strong>A、B、AB、O</strong> の4つのタイプに分類される。
+        <ol>
+            <li>ABO式血液型</li> 
+                - 赤血球表面に A 抗原、B 抗原、またはその両方・どちらもないかで 4 型に分かれる。 
+            <br>・A 型：A 抗原のみを持ち、血清中に抗 B抗体を持つ 
+            <br>・B 型：B 抗原のみを持ち、血清中に抗 A 抗体を持つ 
+            <br>・AB 型：A・B 抗原を両方持ち、血清中に抗 A・抗 B 抗体はない 
+            <br>・O 型：どちらの抗原も持たず、血清中に抗 A・抗 B 抗体を持つ 
+        <li>Rh（アールエイチ）式血液型</li> 
+            - 赤血球表面にある Rh(D) 抗原の有無で、Rh+（プラス）か Rh-（マイナス）かに分かれる。 
+            - 日本では Rh+ が約9割を占め、Rh- は約１割程度。 
+        </ol>
     </p>
-    <h3>A型</h3>
-    <p>A型の説明は<a href="blood_type_A.html">こちら</a></p>
-    <h3>B型</h3>
-    <P>B型の説明は<a href="blood_type_B.html">こちら</a></P>
-    <h3>AB型</h3>
-    <p>AB型の説明は<a href="blood_type_AB.html">こちら</a></p>
-    <h3>O型</h3>
-    <p>O型の説明は<a href="blood_type_O.html">こちら</a></p>
+    <p><strong>各血液型の特徴は以下を参照</strong></p>
+    
+    <div class="blood-grid">
+        <a href="blood_type_A.html" class="blood-cell">
+            <img src="血液型イラスト/ketsuekigata_a.png" alt="A型">
+            <p>A型</p>
+        </a>
+        <a href="blood_type_B.html" class="blood-cell">
+        <img src="血液型イラスト/ketsuekigata_b.png" alt="B型">
+        <p>B型</p>
+        </a>
+        <a href="blood_type_AB.html" class="blood-cell">
+        <img src="血液型イラスト/ketsuekigata_ab.png" alt="AB型">
+        <p>AB型</p>
+        </a>
+        <a href="blood_type_O.html" class="blood-cell">
+        <img src="血液型イラスト/ketsuekigata_o.png" alt="O型">
+        <p>O型</p>
+        </a>
+    </div>
+    
 
     <!--簡易的な血液型占い入れる-->
     <h3>血液型 X 星座占い</h3>
+    <div class="feature-box">
     <P><a href="blood_uranai.html">今日の運勢を試す</a></P>
+    <img src="job_uranaishi.png" alt="占い">
+    </div>
 </body>
 </html>
+<!--  ホームketuekigatga　あがたつくる-->
